@@ -1,0 +1,9 @@
+{
+  "name": "agnus-dei-clothing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AGNUS-DEI custom clothing storefront",
+  "dependencies": {
+    "stripe": "22.6.0"
+  }
+}

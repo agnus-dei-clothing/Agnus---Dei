@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AGNUS-DEI CLOTHING</title>
+<meta name="description" content="AGNUS-DEI CLOTHING.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="AGNUS-DEI home"><img src="assets/logo-black.png" alt="agnus - dei"></a>
+  <button class="cart-btn" id="cartOpen">CART <span id="cartCount">0</span></button>
+</header>
+
+<main id="top">
+  <section class="brand-stage" aria-label="AGNUS-DEI">
+    <img src="assets/logo-black.png" alt="agnus - dei">
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="section-head">
+      <h1>SHOP</h1>
+    </div>
+    <div class="product-grid" id="products"></div>
+  </section>
+
+  <section class="newsletter" id="updates">
+    <h2>EMAIL UPDATES &amp; EARLY ACCESS</h2>
+    <form id="newsletterForm">
+      <input type="email" placeholder="EMAIL ADDRESS" aria-label="Email address" required>
+      <button type="submit">JOIN ↗</button>
+    </form>
+    <small id="signupMsg"></small>
+    <div class="brand-contact" aria-label="AGNUS-DEI contact links">
+      <a href="mailto:agnusdeiagnusdei@outlook.com">agnusdeiagnusdei@outlook.com</a>
+      <a href="https://www.instagram.com/____agnusdei____?utm_source=ig_web_button_share_sheet&amp;igsi=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+    </div>
+  </section>
+</main>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head"><h2>YOUR CART</h2><button id="cartClose" aria-label="Close cart">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-foot">
+    <div><span>SUBTOTAL</span><strong id="cartTotal">$0.00</strong></div>
+    <button class="checkout" id="checkout">CHECKOUT <span>↗</span></button>
+    
+  </div>
+</aside>
+
+<div class="product-modal" id="productModal" role="dialog" aria-modal="true">
+  <button class="modal-close" id="modalClose" aria-label="Close product">×</button>
+  <div class="modal-image"><img id="modalImg" src="" alt=""><button class="modal-back" id="modalBack" type="button" hidden>BACK VIEW ↔</button></div>
+  <div class="modal-info">
+    <p class="eyebrow" id="modalCategory"></p>
+    <h2 id="modalName"></h2>
+    <div class="modal-price" id="modalPrice"></div>
+    <p id="modalDesc"></p>
+    <label>SIZE
+      <select id="modalSize"><option>S</option><option>M</option><option>L</option><option>XL</option><option>2XL</option></select>
+    </label>
+    <button class="button full" id="addToCart">ADD TO CART <span>+</span></button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
